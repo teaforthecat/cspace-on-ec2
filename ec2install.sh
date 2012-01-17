@@ -30,7 +30,7 @@ sudo mv apache-tomcat-6.0.33 /usr/local/share/;
 
 rm apache-tomcat-6.0.33-2011-12-15.tar.gz;
 
-svn co -q https://source.collectionspace.org/collection-space/src/services/tags/v2.0/;
+svn co -q --force --no-auth-cache --non-interactive --trust-server-cert https://source.collectionspace.org/collection-space/src/services/tags/v2.0/;
 
 cd v2.0/;
 
