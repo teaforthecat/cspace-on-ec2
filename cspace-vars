@@ -1,0 +1,12 @@
+export CSPACE_JEESERVER_HOME="/usr/local/share/apache-tomcat-6.0.33";
+export CATALINA_HOME=$CSPACE_JEESERVER_HOME;
+export CATALINA_PID="$CSPACE_JEESERVER_HOME/bin/tomcat.pid";
+export CATALINA_OPTS="-Xmx1024m -XX:MaxPermSize=384m";
+# export JAVA_HOME="/usr/java/jdk1.6.0_30" from docs
+export JAVA_HOME="/usr/lib/jvm/java-6-openjdk/";
+export DB_USER="catalina";
+export DB_PASSWORD="nuxeo";
+export DB_PASSWORD_NUXEO="";
+export DB_PASSWORD_CSPACE="";
+export ANT_OPTS="-Xmx768m -XX:MaxPermSize=512m";
+export MAVEN_OPTS="-Xmx768m -XX:MaxPermSize=512m";
