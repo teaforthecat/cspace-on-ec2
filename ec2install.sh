@@ -1,4 +1,7 @@
 #!/bin/bash -ex
+# This script is meant to run on a new ec2 instance of ubuntu-natty
+# teaforthecat@gmail.com
+
 sudo apt-get update;
 
 sudo apt-get install -y --force-yes maven2 ant postgresql imagemagick subversion ftp;
