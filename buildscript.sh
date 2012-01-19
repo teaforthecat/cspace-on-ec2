@@ -34,7 +34,7 @@ region="us-east-1"
 # Architecture
 arch="amd64"
 
-instance_type="m1.large"
+instance_type="m1.small"
 
 # Ubuntu release
 codename="natty"
