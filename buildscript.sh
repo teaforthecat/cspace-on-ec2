@@ -79,7 +79,7 @@ perl -MIO::Socket::INET -e "
 sleep 10
 
 # Copy build script and env variables to the instance
-# TODO: we should be able to copy both files at once
+# TODO: we should be able to copy all files at once
 rsync                       \
   --rsh="ssh -o 'StrictHostKeyChecking false'" \
   --rsync-path="sudo rsync" \
@@ -92,5 +92,10 @@ rsync                       \
   cspace-vars \
   ubuntu@$host:
 
+rsync                       \
+  --rsh="ssh -o 'StrictHostKeyChecking false'" \
+  --rsync-path="sudo rsync" \
+  create_casts.sql \
+  ubuntu@$host:
 
 time ssh ubuntu@$host ./ec2install.sh
