@@ -8,7 +8,7 @@ sudo apt-get install -y --force-yes maven2 ant postgresql imagemagick subversion
 
 sudo -u postgres createlang plpgsql template1;
 
-sudo -u postgres psql -f create-casts.sql;
+sudo -u postgres psql -f create_casts.sql;
 
 sudo -u postgres createuser catalina --superuser;
 
